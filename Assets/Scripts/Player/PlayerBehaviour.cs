@@ -9,6 +9,9 @@ public class PlayerBehaviour : MonoBehaviour
     public float walkSpeed = 20f;
     
     public Animator animator;
+    public GameObject FireballPrefab;
+    public Transform FirePoint;
+
 
     float horizontalMove = 0f;
     bool jump = false;
@@ -31,13 +34,14 @@ public class PlayerBehaviour : MonoBehaviour
             jump = true;
             animator.SetBool("isJumping", jump);
         }
-        if (Input.GetButtonDown("Attack"))
+        if (Input.GetButtonDown("Attack") && isSwordEquiped)
         {
             animator.SetTrigger("Attack");
         }
-        if (Input.GetButtonDown("Magic"))
+        if (Input.GetButtonDown("Magic") && isSwordEquiped)
         {
             animator.SetTrigger("Magic");
+            DoMagic();
         }
         if (Input.GetButtonDown("Sword"))
         {
@@ -56,5 +60,8 @@ public class PlayerBehaviour : MonoBehaviour
     {
         animator.SetBool("isJumping", false);
     }
-
+    public void DoMagic()
+    {
+        Instantiate(FireballPrefab, FirePoint.position, FirePoint.rotation);
+    }
 }
