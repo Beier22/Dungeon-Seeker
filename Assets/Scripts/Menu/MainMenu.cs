@@ -11,7 +11,8 @@ public class MainMenu : MonoBehaviour
     }
     public void LoadGame()
     {
-
+        PlayerData data = SaveData.LoadPlayer();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + data.level);
     }
     public void Options()
     {
