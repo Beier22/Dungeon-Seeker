@@ -11,10 +11,10 @@ public class PlayerBehaviour : MonoBehaviour
     public Animator animator;
     public GameObject FireballPrefab;
     public Transform FirePoint;
-
+    public PlayerSounds sounds;
 
     float horizontalMove = 0f;
-    bool jump = false;
+    bool isJumping = false;
     bool isSwordEquiped = false;
 
     // Start is called before the first frame update
@@ -31,16 +31,19 @@ public class PlayerBehaviour : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
         if(Input.GetButtonDown("Jump"))
         {
-            jump = true;
-            animator.SetBool("isJumping", jump);
+            isJumping = true;
+            animator.SetBool("isJumping", isJumping);
+            sounds.PlayJumpSound();
         }
         if (Input.GetButtonDown("Attack") && isSwordEquiped)
         {
             animator.SetTrigger("Attack");
+            sounds.PlayAttackSound();
         }
         if (Input.GetButtonDown("Magic") && isSwordEquiped)
         {
             animator.SetTrigger("Magic");
+            sounds.PlayMagicSound();
             DoMagic();
         }
         if (Input.GetButtonDown("Sword"))
@@ -52,8 +55,8 @@ public class PlayerBehaviour : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        controller2D.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
-        jump = false;
+        controller2D.Move(horizontalMove * Time.fixedDeltaTime, false, isJumping);
+        isJumping = false;
     }
 
     public void OnLanding()
