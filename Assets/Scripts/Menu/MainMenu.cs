@@ -7,12 +7,13 @@ public class MainMenu : MonoBehaviour
 {
     public void NewGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Dungeon001");
     }
     public void LoadGame()
     {
+        Player.state = LoadState.LOAD;
         PlayerData data = SaveData.LoadPlayer();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + data.level);
+        SceneManager.LoadScene(data.level);
     }
     public void Options()
     {

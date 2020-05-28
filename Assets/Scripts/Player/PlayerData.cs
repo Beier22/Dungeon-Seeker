@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 
 [System.Serializable]
 public class PlayerData
@@ -10,14 +8,13 @@ public class PlayerData
     public int level;
 
     public PlayerData(Player player) {
-        level = player.level;
-        health = player.health;
+        level = Player.level;
+        health = Player.health;
 
         position = new float[3];
 
         position[0] = player.transform.position.x;
         position[1] = player.transform.position.y;
         position[2] = player.transform.position.z;
-
     }
 }

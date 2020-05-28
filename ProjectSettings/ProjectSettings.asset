@@ -631,6 +631,8 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Build: 1
+    Collab: 1
     UNet: 1
   luminIcon:
     m_Name: 
@@ -644,10 +646,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: ed513974-5d73-4eae-a20f-e1a783538540
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: Dungeon Seeker
+  organizationId: leopoldus97
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

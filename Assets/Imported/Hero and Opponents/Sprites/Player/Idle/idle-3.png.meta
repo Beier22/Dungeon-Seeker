@@ -44,13 +44,13 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 9
-  spritePivot: {x: 0.34662578, y: 0.51363325}
+  spritePivot: {x: 0.35, y: 0.5}
   spritePixelsToUnits: 32
-  spriteBorder: {x: 29, y: 15, z: 71, w: 19}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 1
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -94,7 +94,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
@@ -106,66 +106,12 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
-    physicsShape:
-    - - {x: -25, y: -23}
-      - {x: -23, y: -22}
-      - {x: -22, y: -19}
-      - {x: -20, y: -16}
-      - {x: -20, y: -18}
-      - {x: -18, y: -22}
-      - {x: -18, y: -32}
-      - {x: -16, y: -34}
-      - {x: -11, y: -34}
-      - {x: -9, y: -32}
-      - {x: -9, y: -30}
-      - {x: -11, y: -27}
-      - {x: -11, y: -25}
-      - {x: -10, y: -24}
-      - {x: -10, y: -8}
-      - {x: -9, y: -7}
-      - {x: -9, y: -4}
-      - {x: -10, y: -3}
-      - {x: -10, y: 0}
-      - {x: -9, y: 1}
-      - {x: -9, y: 6}
-      - {x: -7, y: 8}
-      - {x: -7, y: 11}
-      - {x: -8, y: 12}
-      - {x: -8, y: 14}
-      - {x: -12, y: 18}
-      - {x: -12, y: 26}
-      - {x: -16, y: 30}
-      - {x: -21, y: 30}
-      - {x: -25, y: 26}
-      - {x: -25, y: 21}
-      - {x: -24, y: 20}
-      - {x: -25, y: 19}
-      - {x: -28, y: 19}
-      - {x: -32, y: 15}
-      - {x: -33, y: 9}
-      - {x: -32, y: 8}
-      - {x: -33, y: 6}
-      - {x: -33, y: -1}
-      - {x: -32, y: -2}
-      - {x: -32, y: -8}
-      - {x: -30, y: -10}
-      - {x: -30, y: -13}
-      - {x: -31, y: -14}
-      - {x: -32, y: -22}
-      - {x: -33, y: -23}
-      - {x: -33, y: -26}
-      - {x: -34, y: -27}
-      - {x: -34, y: -32}
-      - {x: -32, y: -34}
-      - {x: -28, y: -34}
-      - {x: -26, y: -32}
-      - {x: -26, y: -26}
-      - {x: -25, y: -25}
+    physicsShape: []
     bones: []
     spriteID: 71861b9543c09be4db4380ea52b7b080
     internalID: 0

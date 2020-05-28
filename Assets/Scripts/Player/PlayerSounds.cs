@@ -9,6 +9,7 @@ public class PlayerSounds : MonoBehaviour
     public AudioClip jump;
     public AudioClip attack;
     public AudioClip magic;
+    public AudioClip die;
 
 
     AudioSource sound;
@@ -31,6 +32,11 @@ public class PlayerSounds : MonoBehaviour
     public void PlayJumpSound()
     {
         sound.clip = jump;
+        sound.Play();
+    }
+    public void PlayDieSound()
+    {
+        sound.clip = die;
         sound.Play();
     }
 
